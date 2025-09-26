@@ -1,0 +1,118 @@
+/* Style général sobre, ambiance montagne, facile à modifier */
+
+/* Police sobre et lisible */
+body {
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f7fafb url('images/bg-montagne.jpg') no-repeat center top/cover;
+    min-height: 100vh;
+    color: #222;
+}
+
+nav {
+    background: rgba(68, 86, 91, 0.95);
+    padding: 1em;
+    text-align: center;
+}
+nav a {
+    color: #f2f2f2;
+    margin: 0 1em;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+nav a:hover {
+    color: #8ecae6;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 1.5em;
+    font-size: 2.3em;
+    letter-spacing: 1px;
+}
+
+the .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.2em;
+    margin: 2em 0;
+}
+.gallery img {
+    width: 280px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(44, 62, 80, 0.09);
+    background: #e6f2ff;
+}
+
+.news {
+    max-width: 700px;
+    margin: 2em auto;
+    padding: 0 1em;
+}
+.news article {
+    background: #fff;
+    border-radius: 8px;
+    margin-bottom: 2em;
+    padding: 1.2em 1.5em;
+    box-shadow: 0 2px 8px rgba(34, 49, 63, 0.04);
+}
+.news .date {
+    color: #8ecae6;
+    font-size: 0.95em;
+    margin-bottom: 0.5em;
+}
+
+.contact-form {
+    max-width: 430px;
+    margin: 2em auto;
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 2px 8px rgba(34,49,63,0.04);
+    padding: 1.5em 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.contact-form label {
+    font-weight: bold;
+    margin-bottom: 0.2em;
+}
+.contact-form input,
+.contact-form textarea {
+    padding: 0.7em;
+    border-radius: 4px;
+    border: 1px solid #b7c8cd;
+    font-size: 1em;
+    width: 100%;
+    background: #f7fafb;
+}
+.contact-form button {
+    background: #8ecae6;
+    border: none;
+    color: #fff;
+    padding: 0.8em 0;
+    font-size: 1.1em;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.contact-form button:hover {
+    background: #457b9d;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+    .news, .contact-form {
+        padding: 1em;
+    }
+}
